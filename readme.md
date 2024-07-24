@@ -1,26 +1,8 @@
-# skyOS readme.md file
-open-source operating system for the Scratch Computing Alliance [SCA]
+# coffeeOS readme.md file
+open-source fork of skyOS 3.0
 
 ## description
-an os built FROM SCRATCH!! its open-source easy to contribute
-to because it is written in python a very easy langauge! (to learn and program in)
-*thanks god github exists so the team can work on this.*
-how to contribute below!
+coffeeOS is a fork of skyOS 3.0 that emerged when webbrowser11 told MicroboyLLC to change skyOS 3.0 to skyOS Java 3.0, but MicroboyLLC refused, so coffeeOS emerged.
 
 ## contributing
-email:
-terpstragraham@gmail.com
-and wait for a notification that you can contribute.
-then click accept head over to this repository
-and help us work on skyOS!
-
-## website
-https://webbrowser11.github.io/skyOSweb/
-also for more infromation on cotributing!
-
-## work in progress!
-work on this project is STILL IN PROGRESS
-
-<ins>written from SCRATCH!<ins>
-
-# skyOS 3 is already out and is a rewrite in Java.
+Just make a fork, and then when you want to push some change(s), make a pull request.
