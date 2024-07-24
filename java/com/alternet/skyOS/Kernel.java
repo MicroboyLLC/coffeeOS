@@ -1,6 +1,6 @@
 // skyOS 3.0
 /*
-Copyright (c) 2024 Alter-Net Codes
+Copyright (c) 2024 Pear Computer LLC.
 
 Redistribution and use in source and binary forms, with or without modification, are permitted provided that the following conditions are met:
 
@@ -12,9 +12,7 @@ THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS" AND 
 */
 
 /*
-The next evolution of skyOS, skyOS 3 is a single .class file
-that runs in the JVM.
-It is pretty useful, and it can also run apps as .class files as well.
+coffeeOS, a fork of skyOS 3.0
 */
 
 import java.util.Scanner;
@@ -35,9 +33,9 @@ class Kernel {
     String echo = null;
 
     while (true) { // Use 'true' for an infinite loop
-      print("Welcome to skyOS!");
-      print("skyOS v3.0");
-      print("skyOS> ");
+      print("Welcome to coffeeOS!");
+      print("coffeeOS v1.0");
+      print("coffeeOS> ");
       command = scanner.nextLine();
 
       switch (command) {
