@@ -32,10 +32,11 @@ class Kernel {
     String pwd = System.getProperty("user.dir");
     String echo = null;
     ProcessBuilder builder = null;
+    
+    print("Welcome to coffeeOS!");
+    print("coffeeOS v1.0");
 
     while (true) { // Use 'true' for an infinite loop
-      print("Welcome to coffeeOS!");
-      print("coffeeOS v1.0");
       print("coffeeOS> ");
       command = scanner.nextLine();
 
