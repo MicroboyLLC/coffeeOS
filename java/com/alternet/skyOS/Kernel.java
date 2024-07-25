@@ -31,7 +31,7 @@ class Kernel {
     String command = null;
     String pwd = System.getProperty("user.dir");
     String echo = null;
-    Builder builder = new ProcessBuilder();
+    ProcessBuilder builder = null
 
     while (true) { // Use 'true' for an infinite loop
       print("Welcome to coffeeOS!");
@@ -48,7 +48,7 @@ class Kernel {
         case "app":
           print("Enter the app file path): ");
           String appClassName = scanner.nextLine();
-          builder.command("java", appClassName);
+          builder = new ProcessBuilder("java", appClassName);
           break;
         case "echo":
           print("What to echo> ");
