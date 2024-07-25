@@ -15,10 +15,10 @@ THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS" AND 
 coffeeOS, a fork of skyOS 3.0
 */
 
-import java.util.Scanner;
-import java.net.URL;
-import java.io.File;
-import java.lang.reflect.Method;
+import java.util.*;
+import java.net.*;
+import java.io.*;
+import java.lang.*;
 
 class Kernel {
   public static void print(String text) {
@@ -31,6 +31,7 @@ class Kernel {
     String command = null;
     String pwd = System.getProperty("user.dir");
     String echo = null;
+    Builder builder = new ProcessBuilder();
 
     while (true) { // Use 'true' for an infinite loop
       print("Welcome to coffeeOS!");
@@ -41,27 +42,13 @@ class Kernel {
       switch (command) {
         case "help":
           print("help - Show this help list.");
-          print("app - Load an app (com.example.test.TestApp is the name of the TestApp class for the test app).");
+          print("app - Load an app.");
           print("echo - Echo some text.");
           break;
         case "app":
-          print("Enter the app name (including class name): ");
-          String appClassName = scanner.nextLine(); // Combined app name and class
-
-          try {
-            // Use ClassLoader.getSystemClassLoader() for simplicity
-            Class<?> cls = Class.forName(appClassName);
-            Object obj = cls.newInstance();
-            Method method = cls.getDeclaredMethod("appMain");
-            method.invoke(obj);
-          } catch (ClassNotFoundException e) {
-            print("Error: App class not found.");
-          } catch (Exception e) { // Catch broader exceptions for better error handling
-            e.printStackTrace(); // Print stack trace for debugging
-          } finally {
-            // Not necessary for these variables in this case, but good practice for resource management
-            // appClassName = null;
-          }
+          print("Enter the app file path): ");
+          String appClassName = scanner.nextLine();
+          builder.command("java", appClassName);
           break;
         case "echo":
           print("What to echo> ");
