@@ -1,4 +1,4 @@
-// skyOS 3.0
+// coffeeOS 1.0
 /*
 Copyright (c) 2024 Pear Computer LLC.
 
