@@ -16,7 +16,7 @@ THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS" AND 
 package com.example.test;
 
 class TestApp {
-  public static void appMain() {
+  public static void main(String[] args) {
     System.out.println("Hello, World!");
   }
 }
